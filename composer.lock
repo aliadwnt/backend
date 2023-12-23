@@ -4,8 +4,45 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d648ee3b65e8d352e12e15817702e7cd",
+    "content-hash": "c8cd70b4e4717733240350b5583f0fa4",
     "packages": [
+        {
+            "name": "chriskacerguis/codeigniter-restserver",
+            "version": "3.1.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/chriskacerguis/codeigniter-restserver.git",
+                "reference": "63c5ccad5581c3e0035c400aa929ba1ef0822418"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/chriskacerguis/codeigniter-restserver/zipball/63c5ccad5581c3e0035c400aa929ba1ef0822418",
+                "reference": "63c5ccad5581c3e0035c400aa929ba1ef0822418",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "chriskacerguis\\RestServer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Chris Kacerguis",
+                    "email": "chriskacerguis@gmail.com"
+                }
+            ],
+            "description": "CI Rest Server",
+            "support": {
+                "issues": "https://github.com/chriskacerguis/codeigniter-restserver/issues",
+                "source": "https://github.com/chriskacerguis/codeigniter-restserver/tree/3.1.5"
+            },
+            "time": "2023-07-29T18:18:15+00:00"
+        },
         {
             "name": "codeigniter4/framework",
             "version": "v4.4.3",
