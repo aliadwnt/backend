@@ -11,7 +11,6 @@ class TransactionModel extends Model
     protected $returnType = TransactionModel::class;
     protected $useSoftDeletes = false;
     protected $allowedFields = [
-        'id_transaksi',
         'nama_transaksi',
         'tanggal_transaksi',
         'jumlah_transaksi',
