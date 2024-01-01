@@ -1,37 +1,5 @@
 <?php
 
-// namespace App\Controllers;
-
-// use CodeIgniter\API\ResponseTrait;
-
-// class AnalyticsController extends BaseController
-// {
-//     use ResponseTrait;
-
-//     public function saveData()
-//     {
-//         $request = $this->request->getJSON();
-
-//         // Ambil data dari permintaan
-//         $saldo_awal = $request->saldo_awal;
-//         $pemasukan = $request->pemasukan;
-//         $pengeluaran = $request->pengeluaran;
-//         $selisih = $request->selisih;
-
-//         // Simpan data ke database (gunakan model)
-//         $analyticsModel = new \App\Models\AnalyticsModel();
-//         $analyticsModel->insert([
-//             'saldo_awal' => $saldo_awal,
-//             'pemasukan' => $pemasukan,
-//             'pengeluaran' => $pengeluaran,
-//             'selisih' => $selisih,
-//         ]);
-
-//         // Respon berhasil
-//         return $this->respond(['status' => 'success']);
-//     }
-// }
-
 namespace App\Controllers;
 
 use CodeIgniter\RESTful\ResourceController;
@@ -39,33 +7,6 @@ use CodeIgniter\RESTful\ResourceController;
 class AnalyticsController extends ResourceController
 {
     protected $format = 'json';
-
-    // public function index($id = null)
-    // {
-    //     $billsModel = new \App\Models\billsModel();
-
-    //     if ($id === null) {
-    //         $data = $billsModel->findAll();
-    //     } else {
-    //         $data = $billsModel->find($id);
-    //     }
-
-    //     if (!empty($data)) {
-    //         $response = [
-    //             'status' => 'success',
-    //             'message' => 'Data retrieved successfully',
-    //             'data' => [$data]
-    //         ];
-    //     } else {
-    //         $response = [
-    //             'status' => 'error',
-    //             'message' => ($id === null) ? 'No data found' : 'Data with the specified ID not found',
-    //             'data' => []
-    //         ];
-    //     }
-
-    //     return $this->respond($response);
-    // }
 
     public function index()
     {
